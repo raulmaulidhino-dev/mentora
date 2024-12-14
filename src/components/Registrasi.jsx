@@ -1,11 +1,10 @@
+import Logo from '../assets/mentora-logo.png'
+
+
 const Registrasi = () => {
     return (
         <section className="bg-gray-100 w-screen h-screen flex items-center">
             <section className="bg-white px-6 py-8 rounded-3xl mx-auto  shadow-lg basis-11/12 max-w-md">
-                <div className="mb-8 flex flex-col justify-center items-center gap-6">
-                    <img src="https://picsum.photos/720" alt="Logo" className="w-32 rounded-full"/>
-                    <h2><strong>E-LEARNING</strong></h2>
-                </div>
                 <h2 className="text-xl text-center mb-4">REGISTRASI SISWA</h2>
                 <div className="flex flex-col">
                     <form action="" method="POST" className="mb-8 flex flex-col gap-4">
