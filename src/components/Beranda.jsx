@@ -1,9 +1,10 @@
 import Sidebar from './Sidebar'
 
 const Beranda = () => {
+    let activeNav = "0";
     return (
         <div className="bg-gray-100 flex h-screen">
-            <Sidebar />
+            <Sidebar active={ activeNav } />
             <main className="flex-grow p-4">
                 <h1 className="text-3xl font-extrabold mb-[0.5em]">Selamat Datang Kembali, Siswa!</h1>
                 <p class="mb-[1em]">Semangat mengerjakan tugas dan raih prestas terbaikmu!</p>
