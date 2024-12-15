@@ -1,11 +1,11 @@
 import './App.css'
 import { Routes, Route } from 'react-router-dom'
-import Login from './components/Login'
-import Registrasi from './components/Registrasi'
-import Beranda from './components/Beranda'
-import TugasSaya from './components/TugasSaya'
-import TugasTerbaruSaya from './components/TugasTerbaruSaya'
-import ProfilSiswa from './components/ProfilSiswa'
+import Login from './components/Login.jsx'
+import Registrasi from './components/Registrasi.jsx'
+import Beranda from './components/Beranda.jsx'
+import TugasSaya from './components/TugasSaya.jsx'
+import TugasTerbaruSaya from './components/TugasTerbaruSaya.jsx'
+import ProfilSiswa from './components/ProfilSiswa.jsx'
 
 const App = () => {
   return (
