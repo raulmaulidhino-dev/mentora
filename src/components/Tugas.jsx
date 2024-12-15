@@ -6,9 +6,9 @@ import Sejarah from '../assets/sejarah.png'
 import Olahraga from '../assets/olahraga.png'
 import PPKN from '../assets/ppkn.png'
 
-const Tugas = ({ cover, theme, subject, title, studentClass, teacherName, year}) => {
+const Tugas = ({ cover, subject="sains", title, studentClass, teacherName, year}) => {
     if (cover == null) {
-        switch (theme) {
+        switch (subject.toLowerCase()) {
             case 'sains': cover = Sains; break;
             case 'matematika': cover = Matematika; break;
             case 'bahasa': cover = Bahasa; break;
