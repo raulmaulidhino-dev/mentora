@@ -1,6 +1,3 @@
-import Logo from '../assets/mentora-logo.png'
-
-
 const Registrasi = () => {
     return (
         <section className="bg-gray-100 w-screen h-screen flex items-center">
