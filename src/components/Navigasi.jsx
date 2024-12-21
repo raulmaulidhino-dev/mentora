@@ -12,7 +12,7 @@ const Navigasi = ({ active }) => {
 
     let itemProfil = [
         {icon: CgProfile, label: "Profil Saya", path: "/profil"},
-        {icon: FaChalkboardTeacher, label: "Guru", path: "/"},
+        {icon: FaChalkboardTeacher, label: "Guru", path: "/guru"},
     ];
 
     return (
