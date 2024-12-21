@@ -18,7 +18,7 @@ const TugasTerbaruSaya = () => {
                 <h1 className="text-3xl font-extrabold mb-[0.5em]">TUGAS TERBARU SAYA</h1>
                 <section className="grid gap-4">
                     {tasks.map((task, index) => {
-                        return(<Tugas index={index + 1} subject={task.subject} title={task.title} dateCreated={task.dateCreated} />);
+                        return(<TugasTerbaru index={index + 1} subject={task.subject} title={task.title} dateCreated={task.dateCreated} />);
                     })};
                 </section>
             </main>
