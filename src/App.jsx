@@ -6,6 +6,7 @@ import Beranda from './components/Beranda.jsx'
 import TugasSaya from './components/TugasSaya.jsx'
 import TugasTerbaruSaya from './components/TugasTerbaruSaya.jsx'
 import ProfilSiswa from './components/ProfilSiswa.jsx'
+import Guru from './components/Guru.jsx'
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
       <Route path="/mata-pelajaran" element={<TugasSaya />} />
       <Route path="/tugas-saya" element={<TugasTerbaruSaya />} />
       <Route path="/profil" element={<ProfilSiswa />} />
+      <Route path="/guru" element={<Guru />} />
     </Routes>
   )
 }
