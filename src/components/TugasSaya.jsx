@@ -2,23 +2,23 @@ import Sidebar from './Sidebar.jsx'
 import Tugas from './Tugas.jsx'
 
 const TugasSaya = () => {
-    let activeNav = "1";
+    let activeNav = "2";
 
     let tasks = [
-        {title:"Kimia", subject:"sains", studentClass:"XII MIPA 4", teacherName:"Jono Kirawan, S.Pd.", year:"2024-2025"},
-        {title:"Pendidikan Pancasila", subject:"ppkn", studentClass:"XII MIPA 4", teacherName:"Yulfia, S.Pd.", year:"2024-2025"},
-        {title:"Matematika", subject:"matematika", studentClass:"XII MIPA 4", teacherName:"Endah, S.Pd.", year:"2024-2025"},
-        {title:"Pendidikan Agama Islam", subject:"agama-islam", studentClass:"XII MIPA 4", teacherName:"Aulia Xaviera, S.Pd.I.", year:"2024-2025"}
+        {subject:"Kimia", title:"Proyek Akhir: Mengamati reaksi pembakaran alkohol", dateCreated:"Minggu, 24 November 2024"},
+        {subject:"Pendidikan Pancasila", title:"Saya ber-Pancasila", dateCreated:"Sabtu, 23 November 2024"},
+        {subject:"Matematika", title:"Penerapan Turunan dalam Kehidupan Sehari-hari", dateCreated:"Rabu, 20 November 2024"},
+        {subject:"Pendididkan Agama Islam", title:"Peradaban Islam dari Masa ke Masa", dateCreated:"Kamis, 14 November 2024"}
     ];
 
     return (
         <div className="bg-gray-100 flex h-screen">
             <Sidebar active={ activeNav } />
             <main className="p-4 basis-[75vw]">
-                <h1 className="text-3xl font-extrabold mb-[0.5em]">TUGAS SAYA</h1>
-                <section className="grid grid-cols-[repeat(auto-fill,minmax(300px,1fr))] gap-4">
+                <h1 className="text-3xl font-extrabold mb-[0.5em]">TUGAS TERBARU SAYA</h1>
+                <section className="grid gap-4">
                     {tasks.map((task, index) => {
-                        return (<Tugas title={task.title} subject={task.subject} studentClass={task.studentClass} teacherName={task.teacherName} year={task.year} />);
+                        return(<Tugas index={index + 1} subject={task.subject} title={task.title} dateCreated={task.dateCreated} />);
                     })};
                 </section>
             </main>
