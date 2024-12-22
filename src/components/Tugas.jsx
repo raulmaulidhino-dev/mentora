@@ -1,34 +1,11 @@
-import Sains from '../assets/sains.png'
-import Matematika from '../assets/matematika.png'
-import Bahasa from '../assets/bahasa.png'
-import AgamaIslam from '../assets/agama-islam.png'
-import Sejarah from '../assets/sejarah.png'
-import Olahraga from '../assets/olahraga.png'
-import PPKN from '../assets/ppkn.png'
-
-const Tugas = ({ cover, subject="sains", title, studentClass, teacherName, year}) => {
-    if (cover == null) {
-        switch (subject.toLowerCase()) {
-            case 'sains': cover = Sains; break;
-            case 'matematika': cover = Matematika; break;
-            case 'bahasa': cover = Bahasa; break;
-            case 'agama-islam': cover = AgamaIslam; break;
-            case 'sejarah': cover = Sejarah; break;
-            case 'olahraga': cover = Olahraga; break;
-            case 'ppkn': cover = PPKN; break;
-            default: cover = Sains; break;
-        }
-    }
-
+const Tugas = ({index, subject, title, dateCreated}) => {
     return (
-        <section className="border-2 shadow-xl rounded-xl">
-            <a href="/">
-                <img src={cover} alt="Cover Tugas" className="w-full rounded-t-[10px]" />
-                <section className="p-3">
-                    <h2 className="font-bold text-blue-700 mb-2">{title} - {studentClass} - {teacherName}</h2>
-                    <p>{year}</p>
-                </section>
-            </a>
+        <section className="p-2 shadow-lg rounded-xl flex gap-3">
+            <section className="text-white text-4xl bg-primary px-4 py-2 rounded-xl flex justify-center items-center w-14">{index}</section>
+            <section>
+                <h2 className="text-lg font-semibold mb-[0.5em]"><span className="text-blue-700">{subject}</span> | {title}</h2>
+                <p>{dateCreated}</p>
+            </section>
         </section>
     )
 }
